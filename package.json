@@ -1,0 +1,29 @@
+{
+  "name": "defektive-data-store",
+  "version": "0.0.1",
+  "description": "A simple data store",
+  "main": "index.js",
+  "dependencies": {
+    "wolfy87-eventemitter": "^4.2.11"
+  },
+  "scripts": {
+    "build": "node node_modules/webpack/bin/webpack.js --colors --content-base=dist",
+    "build-watch": "fswatch src | xargs -n1 -I{} sh -c 'reset; npm run build'",
+    "dev": "node node_modules/webpack-dev-server/bin/webpack-dev-server.js --colors --content-base=dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/defektive/data-store.git"
+  },
+  "keywords": [
+    "datastore",
+    "react"
+  ],
+  "author": "defektive",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/defektive/data-store/issues"
+  },
+  "homepage": "https://github.com/defektive/data-store#readme"
+}
